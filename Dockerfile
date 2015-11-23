@@ -7,7 +7,9 @@ RUN . ./hacking/env-setup
 
 RUN pip install paramiko PyYAML Jinja2 httplib2 six
 
+RUN ln -s /usr/local/bin/python /usr/bin/python
+
 ENV PYTHONPATH /ansible/lib
 ENV PATH /ansible/bin:$PATH
-    
+
 WORKDIR /
