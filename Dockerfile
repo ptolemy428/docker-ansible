@@ -18,4 +18,11 @@ RUN dpkg -i /ansible-dk_0.1.0-1_amd64.deb
 ENV PYTHONPATH /ansible/lib
 ENV PATH /ansible/bin:$PATH
 
+ENV PATH=/opt/ansible-dk/bin:/root/.ansible-dk/gem/ruby/2.1.0/bin:/opt/ansible-dk/embedded/bin:$PATH
+ENV GEM_ROOT="/opt/ansible-dk/embedded/lib/ruby/gems/2.1.0"
+ENV GEM_HOME="/root/.ansible-dk/gem/ruby/2.1.0"
+ENV GEM_PATH="/root/.ansible-dk/gem/ruby/2.1.0:/opt/ansible-dk/embedded/lib/ruby/gems/2.1.0"
+ENV PYTHONUSERBASE="/root/.ansible-dk/python"
+ENV PIP_INSTALL_OPTION="--user"
+
 WORKDIR /
