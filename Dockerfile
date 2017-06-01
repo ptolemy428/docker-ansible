@@ -3,7 +3,7 @@ MAINTAINER Larry Liang <ptolemy428@gmail.com>
 
 RUN apt-get update && apt-get install rsync
 
-RUN pip install --no-cache-dir boto \
+RUN pip install --no-cache-dir boto botocore boto3 \
                                ansible
 
 WORKDIR /usr/src/app
